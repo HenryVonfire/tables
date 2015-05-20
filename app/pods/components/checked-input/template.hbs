@@ -1,0 +1,23 @@
+{{#if view.isDisabled}}
+    <div class='ember-table-content' style="background-color: lightgray;">
+      {{#if value}}
+        {{value}}
+      {{else}}
+        {{placeholder}}
+      {{/if}}
+    </div>
+{{else}}
+  {{#if view.isEditing}}
+      <div class='ember-table-content'>
+        {{view view.innerTextField}}
+      </div>
+  {{else}}
+      <div class='ember-table-content'>
+        {{#if value}}
+          {{value}}
+        {{else}}
+          {{placeholder}}
+        {{/if}}
+      </div>
+  {{/if}}
+{{/if}}

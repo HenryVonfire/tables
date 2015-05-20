@@ -1,3 +1,28 @@
+.form-control{
+  width:100%;
+}
 .tabla{
   height:400px;
+  background-color:yellow;
+}
+.innerTabla{
+  height:400px;
+  background-color:orange;
+}
+.table-input
+{
+  padding: 0;
+  margin: 0;
+  height:100%;
+  width:100%;
+}
+.table-input:focus{
+  outline: 0;
+}
+
+.table-input:required:invalid, .table-input:focus:invalid {
+  border-color: red;
+}
+.table-input:required:valid, .table-input:focus:valid {
+  border-color: green;
 }

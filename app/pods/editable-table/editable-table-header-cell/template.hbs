@@ -1,0 +1,16 @@
+<div class="ember-table-content-container" {{action "sortByColumn" view.columnName view.isAscending view.dataType}}>
+    <div class="context-menu-three">
+      <span class="ember-table-content">
+        {{#if view.isSorted}}
+          {{#if view.isAscending}}
+            {{view.content.headerCellName}} &#9652; {{! up}}
+          {{else}}
+            {{view.content.headerCellName}} &#9662; {{! down}}
+          {{/if}}
+        {{else}}
+          {{view.content.headerCellName}} &#9672; {{! rhombus}}
+        {{/if}}
+      </span>
+    </div>
+</div>
+
